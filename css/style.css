@@ -86,7 +86,9 @@
 /* primeraSeccion */
 .primeraSeccion {
     grid-area: primeraSeccion;
-    background-image: url(../img/imagen-fondo.jpg);
+    animation-name: imagenesFondo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
     background-size: cover;
     border-radius: 1rem;
     margin-top: .5rem;
@@ -236,6 +238,28 @@
         height: 23vh;
         margin: 5px;
     }
+
+@keyframes imagenesFondo{
+    0%{
+        background-image: url(../img/baño-espejo.jpeg);
+    }
+
+    25%{
+        background-image: url(../img/baño-espejo.jpeg);
+    }
+
+    50%{
+        background-image: url(../img/cocina-angulo.jpeg);
+    }
+
+    75%{
+        background-image: url(../img/cocina-parrila.jpeg);
+    }
+
+    100%{
+        background-image: url(../img/living-vajilla.jpeg);
+    }
+}
 
 @keyframes fondoTitulo{
     0%{background-image: url(../img/fondo-madera-rustica2.jpg);
