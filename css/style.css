@@ -14,7 +14,8 @@
     "footer primeraSeccion primeraSeccion primeraSeccion";
     width: 100%;
     height: 100%;
-    background-color: #faedcd;
+    background: rgb(250,237,205);
+    background: linear-gradient(180deg, rgba(250,237,205,1) 50%, rgba(204,213,174,1) 100%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .nav img{
     border-radius: 30%;
@@ -50,6 +52,8 @@
 }
 .nav li:hover{
     background-color: #fefae036;
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 .nav a{
     display: block;
@@ -62,7 +66,6 @@
 /* Titulo Principal */
 .header {
     grid-area: header;
-    background-image: url(../img/fondo-madera-rustica.jpg);
     background-size: cover;
     border-radius: 1rem;
     height: 16.5vh;
@@ -75,6 +78,9 @@
     align-items: center;
     color: #faedcd;
     text-shadow: 5px 5px rgba(0, 0, 0, 0.592);
+    animation-name: fondoTitulo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 /* primeraSeccion */
@@ -135,7 +141,12 @@
     height: 2rem;
 }
 .primeraSeccion a:hover{
-    background-color: #d4a373;
+    background-color: #283618;
+    color: #fefae0;
+    border: solid 2px #fefae0;
+    font-size: 24px;
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 
@@ -154,6 +165,7 @@
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
+    color: #283618;
     
 }
 .footer ul{
@@ -165,6 +177,10 @@
 .footer li{
     display: inline;
     
+}
+
+.footer li:hover{
+    transform: scale(1.1);
 }
 
 /* --- Contactos--- */
@@ -220,6 +236,31 @@
         height: 23vh;
         margin: 5px;
     }
+
+@keyframes fondoTitulo{
+    0%{background-image: url(../img/fondo-madera-rustica2.jpg);
+
+    }
+
+    33%{background-image: url(../img/fondo-madera-rustica.jpg);
+
+    }
+
+    66%{background-image: url(../img/fondo-madera-rustica3.jpg);
+
+    }
+
+    100%{background-image: url(../img/fondo-madera-rustica.jpg);
+
+    }
+
+}
+
+
+
+
+
+
 
 
 /* FULL RESPONSIVE - Tablet */
