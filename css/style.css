@@ -227,6 +227,13 @@
     border-radius: 10px;
     box-shadow: 2px 4px #2836188d ;
 }
+.ulServicios h4{
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .ulServicios li{
     padding: 1rem;
     font-size: 1.5rem;
